@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+
+}
+header h2 {
+    display: flex;
+    align-items: center;
+    color: white;
+    filter: drop-shadow(3px 3px 10px grey);
+}
+header {
+    opacity: 2;
+    backdrop-filter: blur(10px);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-size: 2.2em;
+}
+header img {
+    vertical-align: center;
+    height: 10vh;
+    width: auto;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+
+}
+.shadow {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    animation: anim 90s linear infinite;
+
+}
+@keyframes anim{
+    0%{background-position: 0;}
+    100%{background-position: 5440px;}
+}
+.main-cont {
+    display: flex;
+    justify-content: center;
+}
+.my-blur {
+    opacity: 5;
+    backdrop-filter: blur(200px);
+}
+.cards-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.card {
+    background-color: #6c757d;
+    margin-bottom: 30px;
+}
+.card-body {
+    padding: 20px;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+.card-hover {
+    transition: transform 0.3s ease; /* Добавляем анимацию для плавного масштабирования */
+}
+
+.card-hover:hover {
+    transform: scale(1.05); /* Масштабируем элемент при наведении */
+}
+
+.carousel-item {
+    background-color: #6c757d;
+}
+.card-body p {
+    font-size: 1.2em
+}
+.card-body h2 {
+    font-size: 2.2em
+}
+.card-body h5 {
+    font-size: 1.8em
+}
+.box{
+    opacity: 7;
+    backdrop-filter: blur(200px);
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: black;
+}
+.search{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 13px;
+}
+input.search::placeholder {
+    color: black;
+    font-size: 1.2em;
+}
+/*.road-icons {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    vertical-align: center;*/
+/*}*/
+/*.ri-login-box-line {*/
+/*    padding-right: 10px;*/
+/*    color: darkred;*/
+/*}*/
+footer {
+    background-color: #6c757d;
+    height: 10vh;
+}
+.for-footer {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+body {
+    font-size: 16px;
+}
+
+/* Для средних экранов, например, планшетов */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+/* Для больших экранов, например, десктопов */
+
+@media (min-width: 1200px) and (min-width: 1559px) {
+    body {
+        font-size: 15px;
+    }
+    header h2 {
+        font-size: 35px;
+    }
+}
+/* Для очень больших экранов, например, экранов с разрешением XXL */
+@media (min-width: 1560px) and (max-width: 1920px) {
+    body {
+        font-size: 18px;
+    }
+}
